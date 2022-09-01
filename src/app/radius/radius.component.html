@@ -1,0 +1,30 @@
+<div class="d-flex flex-column justify-content-center align-items-center">
+
+    <div class="bg-primary bg-gradient radius" [ngStyle]="{'border-radius': input}">
+        
+    </div>
+
+<div class="text-light d-flex flex-wrap p-2">
+
+
+    <strong>Top Left   <input type="text" [(ngModel)]="rad1" (keyup)="change()"  class="input-box border border-primary" placeholder="%"></strong>
+    
+    <strong>Top Right<input type="text" [(ngModel)]="rad2" (keyup)="change()" class="input-box border border-primary" placeholder="%"></strong>
+   
+    
+    
+    <strong> Bottom Right<input type="text" [(ngModel)]="rad3" (keyup)="change()" class="input-box border border-primary" placeholder="%"></strong>
+
+    <strong>Bottom Left<input type="text" [(ngModel)]="rad4" (keyup)="change()" class="input-box border border-primary" placeholder="%"></strong>
+    
+    
+    
+</div>
+<div class="d-flex justify-content-center align-items-center ">
+   <em class="text-light border border-primary p-3"> border-radius: 
+    <strong class="text-success">{{input}}</strong> 
+    </em> 
+    <button class="btn btn-lg btn-md btn-primary ml-3" (click)="copy()">COPY</button>
+</div>
+</div>
+
